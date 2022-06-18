@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hi Chat</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img class="img_logo" src="img/logo2-notext.png" />
+    </div>
+
+    <div id ="notify" class="notify"><p></p></div>
+    <div class="container-fluid mg-top pd-bottom">
+      <div class="row justify-content-center h-100">
+        <div class="col-md-4 col-xl-3 chat">
+          <div class="card mb-sm-3 mb-md-0 contacts_card">
+            <div class="card-header info-card">
+             <h3><i class="fas fa-users"></i> Users in room</h3>
+            </div>
+            <div class="card-body">
+              <ul id="users" class="user-in-rom"></ul>
+            </div>
+            <div class="card-footer">
+              <a href="/index.html" class="btn btn-block btn-logout">Leave Room</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-xl-6 chat">
+          <div class="card">
+            <div class="card-header msg_head">
+              <div class="d-flex bd-highlight">
+                <div class="img_cont">
+                  <img
+                    src="img/room.png"
+                    class="rounded-circle user_img"
+                  />
+                  <span class="online_icon"></span>
+                </div>
+                <div class="user_info">
+                  <span id="room-name"></span>
+                  <p>Online</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body chat-messages" ">
+             
+            </div>
+            <div class="card-footer">
+              <div class="chat-form-container">
+                <form id="chat-form">
+                  <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off" />
+                  <button  id="buttonInput"><i class="fas fa-paper-plane"></i> </button>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enter Room</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form action="/chat.html">
+      <div class="img_login">
+        <img src="img/logo2.png" />
+      </div>
+      <div>
+        <h3>Hi there,</h3>
+      </div>
+
+      <input type="text" placeholder="Username" name="username" id="username" required />
+
+      <div class="form-control">
+        <label for="room">Room</label>
+        <select class="select-room" name="room" id="room">
+          <option value="room1" selected>Room 01</option>
+          <option value="room2">Room 02</option>
+          <option value="room3">Room 03</option>
+          <option value="room4">Room 04</option>
+          <option value="room5">Room 05</option>
+        </select>
+      </div>
+
+      <button type="submit" value="Login">Enter room</button>
+    </form>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    $(".alert").hide(3000);
+  });
+</script>
