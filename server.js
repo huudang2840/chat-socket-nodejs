@@ -85,7 +85,7 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = 3000 || process.env.PORT;
-server.listen(PORT, () => {
-  console.log(`Listening on port: http://localhost:${PORT}`);
+const port = process.env.PORT || 3000;
+server.listen(port, () => {
+  console.log(`Listening on port: http://localhost:${port}`);
 });
