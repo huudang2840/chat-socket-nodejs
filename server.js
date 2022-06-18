@@ -16,7 +16,7 @@ const now = require("moment");
 
 //Kết nối mongoose
 mongoose
-  .connect("mongodb://localhost:27017/WebSocket", {
+  .connect("mongodb+srv://huudang284:!23456@cluster0.au0oi.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
